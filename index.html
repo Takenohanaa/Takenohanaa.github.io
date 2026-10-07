@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网站</title>
+    <script>
+        function gotoMyGitHub(){
+            location.href = 'https://github.com/Takenohanaa';
+        }
+    </script>
     <link rel="preload" href="Resources/images/amiya.jpg" as = "image">
     <style>
         body {
@@ -21,7 +26,7 @@
 </head>
 <body>
     <h1>欢迎来到我的个人网站</h1>
-    <p>hello</p>
-    <p><a href="https://github.com/Takenohanaa">https://github.com/Takenohanaa</a>我的github网站</p>
+    <p id="demo">我的github网站</p>
+    <button type="button" onclick="gotoMyGitHub">进入我的github网站</button>
 </body>
 </html>
