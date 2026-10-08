@@ -1,0 +1,11 @@
+body {
+    background-image: url('Resources/images/amiya.webp');
+    background-size: cover;
+}
+h1 {
+    color: aqua;
+}
+p {
+    color: darkturquoise;
+    font-size: 24px;
+}

@@ -4,29 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网站</title>
-    <script>
-        function gotoMyGitHub(){
-            window.open('https://github.com/Takenohanaa', '_blank');
-        }
-    </script>
     <link rel="preload" href="Resources/images/amiya.webp" as = "image">
-    <style>
-        body {
-            background-image: url('Resources/images/amiya.webp');
-            background-size: cover;
-        }
-        h1 {
-            color: aqua;
-        }
-        p {
-            color: darkturquoise;
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>欢迎来到我的个人网站</h1>
     <p id="demo">我的github网站</p>
-    <button type="button" onclick="gotoMyGitHub()">进入我的github网站</button>
+    <button type="button" id="githubBtn">进入我的github网站</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
