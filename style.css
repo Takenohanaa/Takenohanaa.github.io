@@ -2,10 +2,136 @@ body {
     background-image: url('Resources/images/amiya.webp');
     background-size: cover;
 }
-h1 {
+
+/*侧边栏样式*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.sidenav.open {
+    width: 250px;
+}
+
+/*按钮样式*/
+.link-btn.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #24292e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+.link-btn.bili-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff31a2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.link-btn.github-btn:hover {
+    background-color: #0366d6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.link-btn.bili-btn:hover {
+    background-color: #18b42d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.link-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.link-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.openbtn {
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*页面样式*/
+.pages {
+    display: none;
+    padding: 20px;
+    animation: fadeIn 0.4s ease;
+}
+.pages.active {
+    display: block;
+}
+.title {
+    text-align: center;
     color: aqua;
 }
-p {
-    color: darkturquoise;
-    font-size: 24px;
+
+
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

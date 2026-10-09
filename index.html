@@ -8,10 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>欢迎来到我的个人网站</h1>
-    <p id="demo">我的github网站</p>
-    <button type="button" id="githubBtn">进入我的github网站</button>
+    <div id="mainSidenav" class="sidenav">
+        <button id="closeBtn" class="closebtn">&times;</button>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#apps">Applications</a>
+        <a href="#study">Study</a>
+        <a href="#about">About</a>
+    </div>
+    <div id="main">
+        <button type="button" id="openBtn" class="openbtn">&#9776;</button>
 
+        <div id="home" class="pages">
+            <h1 class="title">❤️欢迎来到takenohanaa的个人网站❤️</h1>
+
+        </div>
+
+        <div id="games" class="pages">
+            <h1 class="title">🎮这里是takenohanaa的游戏页面</h1>
+        </div>
+
+        <div id="apps" class="pages">
+            <h1 class="title">💾这里是takenohanaa的应用页面</h1>
+        </div>
+
+        <div id="study" class="pages">
+            <h1 class="title">📚这里是takenohanaa的学习页面</h1>
+        </div>
+
+        <div id="about" class="pages">
+            <h1 class="title">😍这里是关于takenohanaa的介绍</h1>
+
+            <button type="button" id="githubBtn" class="link-btn github-btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" d=
+                    "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                </svg>
+            进入我的github网站</button>
+
+            <button type="button" id="biliBtn" class="link-btn bili-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d=
+                    "M18.223 3.086a1.25 1.25 0 0 1 0 1.768L17.08 6h1.17c1.933 0 3.5 1.567 3.5 3.5v8c0 1.933-1.567 3.5-3.5 3.5H5.75c-1.933 0-3.5-1.567-3.5-3.5v-8c0-1.933 1.567-3.5 3.5-3.5h1.17L5.777 4.854a1.25 1.25 0 0 1 1.768-1.768L9.5 5h5l1.955-1.914a1.25 1.25 0 0 1 1.768 0zM18.25 8.5H5.75c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h12.5c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2zM7.5 12.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+            进入我的 Bilibili</button>
+        </div>
+        
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
