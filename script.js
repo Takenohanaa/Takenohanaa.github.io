@@ -55,13 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openBtn && sidenav) {
         openBtn.addEventListener('click', function() {
             sidenav.classList.add('open');
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; 
         });
     }
     if (closeBtn && sidenav) {
         closeBtn.addEventListener('click', function() {
             sidenav.classList.remove('open');
-            document.body.style.backgroundColor = "#ffffff";  
         });
     }
 });

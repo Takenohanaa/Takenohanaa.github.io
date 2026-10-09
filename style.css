@@ -1,6 +1,9 @@
 body {
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
     background-image: url('Resources/images/amiya.webp');
     background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
 }
 
 /*侧边栏样式*/
