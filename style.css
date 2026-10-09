@@ -172,7 +172,6 @@ body {
     body {
         background-image: url('Resources/images/bg_phone.webp');
         background-attachment: scroll; 
-        background-size: cover;
         background-position: center top;
     }
 }
