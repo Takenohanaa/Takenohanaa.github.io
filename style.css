@@ -6,7 +6,7 @@ body {
     transition: background-image 0.5s ease;
 }
 
-/*侧边栏样式*/
+/* #region 侧边栏样式*/
 .sidenav {
     height: 100%;
     width: 250px;
@@ -45,8 +45,8 @@ body {
 .sidenav.open {
     transform: translateX(0);
 }
-
-/*按钮样式*/
+/* #endregion */
+/* #region 按钮样式*/
 .link-btn.github-btn {
     display: inline-flex;
     align-items: center;
@@ -109,8 +109,8 @@ body {
     font-size: 25px;
     cursor: pointer;
 }
-
-/*页面样式*/
+/* #endregion */
+/* #region 页面样式*/
 .pages {
     display: none;
     padding: 20px;
@@ -123,10 +123,40 @@ body {
     text-align: center;
     color: aqua;
 }
+/* #endregion */
+/* #region 学习页面*/
+.artical_grid {
+    display: grid;
+}
+.grid.artical_card {
+    position: relative;
+    display: flex;
+}
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Inter', -apple-system, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    color: #ffffff;
+  
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  
+    transition: all 0.3s ease;
+}
+.tag.tag--mathe {
+    background-color: #0069a4;
+    border: #00a5ef;
+    color: #b8e6fe;
+}
 
-
-
-
+/* #endregion */
 #main {
     padding: 20px;
 }
@@ -138,4 +168,10 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('Resources/images/bg_phone.webp');
+        background-attachment: scroll; 
+    }
 }
