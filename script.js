@@ -62,4 +62,17 @@ document.addEventListener('DOMContentLoaded', function() {
             sidenav.classList.remove('open');
         });
     }
+
+    // 背景图按设备加载：只下载当前设备需要的一张（index.html 中已 preload 预热）
+    const bgQuery = window.matchMedia('(max-width: 768px)');
+    function updateBackground() {
+        const src = bgQuery.matches
+            ? 'Resources/images/bg_phone.webp'
+            : 'Resources/images/amiya.webp';
+        document.body.style.backgroundImage = 'url("' + src + '")';
+    }
+    updateBackground();
+    if (typeof bgQuery.addEventListener === 'function') {
+        bgQuery.addEventListener('change', updateBackground);
+    }
 });

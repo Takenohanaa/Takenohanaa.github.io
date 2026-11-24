@@ -1,8 +1,8 @@
+/* 背景图由 script.js 按设备注入（只下载对应设备的一张），加载前显示渐变打底 */
 body {
     background: linear-gradient(135deg, #1a1a1a, #2c3e50);
-    background-image: url('Resources/images/amiya.webp');
     background-size: cover;
-    transition: background-image 0.5s ease;
+    background-position: center top;
 }
 
 /* #region 侧边栏样式*/
@@ -167,11 +167,4 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-@media screen and (max-width: 768px) {
-    body {
-        background-image: url('Resources/images/bg_phone.webp');
-        background-attachment: scroll; 
-        background-position: center top;
-    }
 }
